@@ -1,0 +1,77 @@
+name: XMTP Rate Limits
+description: >-
+  XMTP is a decentralized protocol and does not impose centralized rate limits
+  in the traditional API sense. Network throughput is governed by node capacity,
+  message fees, and congestion pricing mechanisms. The network is designed for
+  high-throughput messaging with a target of 1 billion messages per month as a
+  scaling milestone. Per-message fees increase dynamically during congestion,
+  creating an economic throttle rather than hard rate limits.
+url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+created: '2026-06-13'
+modified: '2026-06-13'
+rateLimits:
+  - name: Message Size Limit
+    description: >-
+      Each XMTP message payload has a maximum size just under 1MB (1,048,214
+      bytes). For content exceeding this limit, remote attachments are supported
+      to reference externally stored files while keeping the XMTP message small.
+    limit: 1048214
+    unit: bytes
+    period: per-message
+    scope: All APIs
+    enforcement: Hard limit enforced by SDK and network nodes
+    url: https://docs.xmtp.org/chat-apps/intro/faq
+
+  - name: Message Retention Period
+    description: >-
+      Messages are stored on the XMTP network with a default retention period
+      of 60 days. Storage fees are calculated per byte-day of retention.
+      Developers can configure retention periods based on their application
+      needs with corresponding storage cost implications.
+    limit: 60
+    unit: days
+    period: per-message
+    scope: XMTP Network gRPC API
+    enforcement: Network storage policy
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+  - name: Network Throughput
+    description: >-
+      The XMTP network targets high-throughput messaging suitable for consumer
+      applications. Currently operating at Phase 1 mainnet with 7 node operators.
+      Network capacity scales as additional operators join in later phases.
+      No hard per-developer throughput cap is published; congestion fees act as
+      the economic throttle during peak demand periods.
+    limit: null
+    unit: messages-per-second
+    period: continuous
+    scope: XMTP Network
+    enforcement: Economic (congestion fees increase during high load)
+    url: https://xmtp.org/decentralization
+
+  - name: Congestion Fee Trigger
+    description: >-
+      During periods of high network activity, congestion fees are applied
+      dynamically on top of base messaging fees. This serves as the primary
+      rate management mechanism for the decentralized network, discouraging
+      spam and coordinating demand without centralized enforcement.
+    limit: null
+    unit: USDC
+    period: per-message
+    scope: XMTP Network gRPC API
+    enforcement: Dynamic economic pricing
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+  - name: App Chain RPC Rate Limits
+    description: >-
+      Access to the XMTP App Chain via third-party RPC providers such as Alchemy
+      may be subject to rate limits imposed by those providers. XMTP node
+      operators are advised to obtain RPC endpoints with "sufficient rate limits
+      for Mainnet traffic volumes." Developers using Alchemy's free tier will
+      encounter Alchemy's standard compute unit limits.
+    limit: null
+    unit: requests-per-second
+    period: per-second
+    scope: XMTP App Chain RPC API
+    enforcement: Provider-dependent (Alchemy or other RPC provider limits apply)
+    url: https://www.alchemy.com/docs/reference/xmtp-api-quickstart

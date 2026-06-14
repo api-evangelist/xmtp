@@ -1,0 +1,285 @@
+name: XMTP
+description: >-
+  XMTP (Extensible Message Transport Protocol) is a decentralized, open
+  messaging protocol that enables end-to-end encrypted communication between
+  Ethereum wallet addresses and other decentralized identifiers. Built on MLS
+  (Messaging Layer Security), XMTP provides developer SDKs and a gRPC-based
+  network API for sending encrypted messages in decentralized applications,
+  AI agents, and Web3 wallets without relying on centralized servers.
+image: https://xmtp.org/img/xmtp-icon.png
+tags:
+  - Web3
+  - Messaging
+  - Encryption
+  - Decentralized
+  - Ethereum
+  - MLS
+  - Wallets
+  - Agents
+url: https://xmtp.org
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+apis:
+  - name: XMTP Network gRPC API
+    description: >-
+      Core gRPC-based API for the XMTP decentralized messaging network. Provides
+      operations for sending and retrieving encrypted group messages, managing
+      MLS key packages, publishing identity updates, and streaming real-time
+      message events. All messages are end-to-end encrypted using the MLS
+      protocol standard. Node operators expose this API over TLS-secured public
+      DNS endpoints.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://docs.xmtp.org
+    baseURL: grpc://grpc.xmtp.network
+    tags:
+      - gRPC
+      - Messaging
+      - Encryption
+      - MLS
+      - Web3
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org
+      - type: OpenAPI
+        url: https://github.com/xmtp/proto
+      - type: ProtocolBuffers
+        url: https://github.com/xmtp/proto
+      - type: GettingStarted
+        url: https://docs.xmtp.org/chat-apps/intro/get-started
+      - type: LibXMTPDocs
+        url: https://xmtp-libxmtp.mintlify.app/api/xmtp-api
+      - type: NodeImplementation
+        url: https://github.com/xmtp/xmtpd
+      - type: NetworkStatus
+        url: https://status.xmtp.org
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP JavaScript/TypeScript SDK
+    description: >-
+      Client SDK for browsers and Node.js enabling applications to send and
+      receive end-to-end encrypted messages via the XMTP network. Supports
+      wallet-based authentication (EVM-compatible wallets using ECDSA signing),
+      group conversations, message streaming, consent management, and rich
+      content types including text, attachments, reactions, and read receipts.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://github.com/xmtp/xmtp-js
+    baseURL: https://xmtp.network
+    tags:
+      - JavaScript
+      - TypeScript
+      - SDK
+      - Browser
+      - Node.js
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org/chat-apps/intro/get-started
+      - type: GitHubRepository
+        url: https://github.com/xmtp/xmtp-js
+      - type: GettingStarted
+        url: https://docs.xmtp.org/chat-apps/intro/get-started
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP Agent SDK
+    description: >-
+      Node.js SDK tailored for building AI agents and bots on the XMTP network.
+      Enables agents to participate in XMTP conversations, respond to messages,
+      and interact with users through encrypted decentralized messaging channels.
+      Designed for autonomous agent deployments that need secure, censorship-
+      resistant communication without centralized infrastructure dependencies.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://docs.xmtp.org
+    baseURL: https://xmtp.network
+    tags:
+      - Agents
+      - AI
+      - Node.js
+      - SDK
+      - Automation
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org
+      - type: GitHubRepository
+        url: https://github.com/xmtp/agent-sdk-starter
+      - type: GettingStarted
+        url: https://docs.xmtp.org
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP Android SDK
+    description: >-
+      Native Kotlin SDK for integrating XMTP encrypted messaging into Android
+      applications. Supports wallet-based identity, group conversations, message
+      streaming, and the full XMTP content type system for rich media and
+      transactional messages in mobile apps.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://github.com/xmtp/xmtp-android
+    baseURL: https://xmtp.network
+    tags:
+      - Android
+      - Kotlin
+      - Mobile
+      - SDK
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org
+      - type: GitHubRepository
+        url: https://github.com/xmtp/xmtp-android
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP iOS SDK
+    description: >-
+      Native Swift SDK for integrating XMTP encrypted messaging into iOS
+      applications. Provides wallet-based authentication, group conversations,
+      real-time message streaming, and comprehensive content type support for
+      building secure, decentralized messaging features in iOS and macOS apps.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://github.com/xmtp/xmtp-ios
+    baseURL: https://xmtp.network
+    tags:
+      - iOS
+      - Swift
+      - Mobile
+      - SDK
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org
+      - type: GitHubRepository
+        url: https://github.com/xmtp/xmtp-ios
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP React Native SDK
+    description: >-
+      Cross-platform SDK for building XMTP encrypted messaging into React Native
+      and Expo applications. Bridges the libxmtp core library to JavaScript,
+      enabling wallet-based messaging, group chats, streaming, and rich content
+      types in cross-platform mobile applications targeting both iOS and Android.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://github.com/xmtp/xmtp-react-native
+    baseURL: https://xmtp.network
+    tags:
+      - React Native
+      - Expo
+      - Mobile
+      - SDK
+      - Cross-Platform
+    properties:
+      - type: Documentation
+        url: https://docs.xmtp.org
+      - type: GitHubRepository
+        url: https://github.com/xmtp/xmtp-react-native
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+  - name: XMTP App Chain RPC API
+    description: >-
+      JSON-RPC API for the XMTP Layer-3 appchain built on Arbitrum and settling
+      to Base. Used for smart contract interactions including group management,
+      identity updates, node registration, and fee payments in USDC. Compatible
+      with standard Ethereum JSON-RPC tooling via providers like Alchemy.
+      Chain ID 2020 with ETH as native currency.
+    image: https://xmtp.org/img/xmtp-icon.png
+    humanURL: https://www.alchemy.com/docs/reference/xmtp-api-quickstart
+    baseURL: https://xmtp-mainnet.g.alchemy.com/v2
+    tags:
+      - JSON-RPC
+      - Blockchain
+      - Ethereum
+      - Layer-3
+      - Smart Contracts
+    properties:
+      - type: Documentation
+        url: https://www.alchemy.com/docs/reference/xmtp-api-quickstart
+      - type: GettingStarted
+        url: https://www.alchemy.com/docs/reference/xmtp-api-quickstart
+      - type: Plans
+        url: https://xmtp.org/xmtp/plans.yml
+      - type: RateLimits
+        url: https://xmtp.org/xmtp/rate-limits.yml
+      - type: FinOps
+        url: https://xmtp.org/xmtp/finops.yml
+    contact:
+      - FN: XMTP Support
+        email: contact@xmtp.org
+        url: https://community.xmtp.org
+
+common:
+  - type: GitHub
+    url: https://github.com/xmtp
+  - type: Blog
+    url: https://blog.xmtp.org
+  - type: Community
+    url: https://community.xmtp.org
+  - type: Status
+    url: https://status.xmtp.org
+  - type: ImprovementProposals
+    url: https://github.com/xmtp/XIPs
+  - type: DecentralizationRoadmap
+    url: https://xmtp.org/decentralization
+  - type: FeeCalculator
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+  - type: TermsOfService
+    url: https://xmtp.org/terms
+  - type: PrivacyPolicy
+    url: https://xmtp.org/privacy
+  - type: Contact
+    url: https://community.xmtp.org
+maintainers:
+  - FN: XMTP Labs
+    email: contact@xmtp.org
+    url: https://xmtp.org

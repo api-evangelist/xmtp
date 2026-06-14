@@ -1,0 +1,127 @@
+name: XMTP FinOps
+description: >-
+  XMTP uses a novel decentralized FinOps model where fees are paid in USDC
+  directly to independent node operators. Unlike traditional SaaS APIs with
+  monthly invoices, developers pre-fund their applications through the XMTP
+  Funding Portal and the network deducts fees per message in real time.
+  Cost forecasting is based on expected message volume and average message size.
+url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+created: '2026-06-13'
+modified: '2026-06-13'
+costs:
+  - name: Base Messaging Fee
+    description: >-
+      Flat per-message charge applied to every message sent on the XMTP
+      network. Set at a global rate by network governance. Serves as the
+      foundational cost component for all XMTP deployments.
+    type: UsageBased
+    unit: per-message
+    currency: USDC
+    estimate: 0.00005
+    estimateUnit: USDC per message
+    details: Approximately $5 per 100,000 messages
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+  - name: Storage Fee
+    description: >-
+      Per-byte-day storage fee for message retention on the XMTP network.
+      Calculated based on the size of the encrypted message payload and the
+      number of days it is retained. Default retention period is 60 days.
+      Formula: storage rate × message size in bytes × retention days.
+    type: UsageBased
+    unit: per-byte-day
+    currency: USDC
+    estimate: variable
+    estimateUnit: USDC per byte per day
+    details: Cost varies by message size and retention period configuration
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+  - name: Congestion Fee
+    description: >-
+      Dynamic fee applied on top of base and storage fees during periods of
+      high network activity. Acts as the network's economic demand-management
+      mechanism. Fee increases automatically when network load is elevated
+      and decreases when load normalizes.
+    type: Dynamic
+    unit: per-message
+    currency: USDC
+    estimate: variable
+    estimateUnit: USDC per message (variable)
+    details: >-
+      Amount varies based on real-time network congestion. Zero during
+      normal operation; increases proportionally with network load.
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+  - name: App Chain Gas Fee
+    description: >-
+      Gas fees for transactions on the XMTP Layer-3 appchain (Chain ID 2020),
+      which settles to Base via Arbitrum. Required for group creation/management,
+      identity updates, node registration, and payer wallet operations. Gas is
+      denominated in ETH and is typically sub-cent per transaction. Automatically
+      managed through the XMTP Funding Portal.
+    type: UsageBased
+    unit: per-transaction
+    currency: ETH
+    estimate: 0.0001
+    estimateUnit: USD per transaction (typical)
+    details: >-
+      Fractions of a US cent per on-chain transaction. Managed automatically
+      via the Funding Portal for most developers.
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+
+costEstimation:
+  - name: Small App
+    description: Startup or hobby app with moderate message volume
+    users: 1000
+    messagesPerUserPerMonth: 500
+    totalMessagesPerMonth: 500000
+    estimatedMonthlyCostUSD: 25
+    notes: Based on $5 per 100,000 messages baseline; excludes storage and gas
+
+  - name: Medium App
+    description: Growing consumer app with active daily messaging
+    users: 10000
+    messagesPerUserPerMonth: 500
+    totalMessagesPerMonth: 5000000
+    estimatedMonthlyCostUSD: 250
+    notes: Based on $5 per 100,000 messages baseline; excludes storage and gas
+
+  - name: Large App
+    description: High-volume consumer messaging or agent platform
+    users: 100000
+    messagesPerUserPerMonth: 500
+    totalMessagesPerMonth: 50000000
+    estimatedMonthlyCostUSD: 2500
+    notes: >-
+      Based on $5 per 100,000 messages baseline. Fees expected to decrease as
+      global network volume reaches 1 billion messages/month milestone.
+
+costOptimization:
+  - tip: Minimize message payload size to reduce storage fees
+  - tip: Use remote attachments for content over ~100KB to keep per-message costs low
+  - tip: Monitor congestion fees and consider off-peak scheduling for bulk operations
+  - tip: Pre-fund apps through the Funding Portal to avoid messaging interruptions
+  - tip: >-
+      Track message volume in aggregate; the network targets cost reduction as
+      it scales toward 1 billion messages/month
+  - tip: >-
+      Use local XMTP node (xmtp/xmtp-local-node) for development to avoid
+      incurring fees during testing
+
+feeDistribution:
+  description: >-
+    In Phase 1 of the XMTP mainnet, 100% of collected fees are distributed
+    between the XMTP Layer-3 appchain sequencer and the node operators who
+    store and relay messages. No fees are retained by XMTP Labs.
+  phase1:
+    nodeOperators: 100%
+    xmtpLabs: 0%
+    notes: >-
+      Fees split between L3 sequencer and node operators; exact split
+      determined by network governance
+  phase2:
+    description: >-
+      Token staking and emissions introduced; surplus fees used to buy back
+      and burn tokens; token holders gain governance over fee distribution
+  paymentMethod: USDC (USD Coin stablecoin on Ethereum/Base)
+  fundingPortal: https://docs.xmtp.org/fund-agents-apps/calculate-fees

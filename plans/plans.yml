@@ -1,0 +1,81 @@
+name: XMTP Plans
+description: >-
+  XMTP uses a usage-based, decentralized fee model rather than traditional
+  subscription tiers. Fees are paid in USDC directly to node operators who
+  run the XMTP network infrastructure. There are no centralized subscription
+  plans — developers fund their apps and agents through the XMTP Funding
+  Portal, and the network charges per-message fees distributed to node operators.
+url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: Open Developer Access
+    description: >-
+      XMTP SDKs and network access are open source and freely available. Any
+      developer can build applications and agents using XMTP without any
+      upfront subscription fee. Network message fees only apply when messages
+      are sent over the production mainnet.
+    url: https://docs.xmtp.org/chat-apps/intro/get-started
+    free: true
+    pricing:
+      - type: Free
+        description: SDK access, documentation, and open source tooling are free
+    features:
+      - Open source SDKs for JavaScript/TypeScript, Android, iOS, React Native
+      - Agent SDK for building AI agents
+      - Full documentation access
+      - Community support via community.xmtp.org
+      - XMTP Chat test environment at xmtp.chat
+      - Local XMTP node for development testing
+      - Testnet access for development
+
+  - name: Mainnet Usage (Pay-per-message)
+    description: >-
+      Production mainnet usage is billed on a per-message basis in USDC.
+      Fees are paid directly to independent node operators and are not
+      collected by XMTP Labs. Developers pre-fund their apps through the
+      XMTP Funding Portal and the network deducts fees per message sent.
+    url: https://docs.xmtp.org/fund-agents-apps/calculate-fees
+    free: false
+    pricing:
+      - type: PayPerUse
+        description: Approximately $5 per 100,000 messages (~$0.00005 per message) in USDC
+      - type: StorageFee
+        description: Per-byte-day storage fee for message retention (default 60 days)
+      - type: GasFee
+        description: >-
+          Fractions of a US cent per transaction for group management, identity
+          updates, and payer operations on the XMTP App Chain
+      - type: CongestionFee
+        description: Dynamic fee applied during periods of high network activity
+    features:
+      - Production mainnet messaging
+      - End-to-end MLS encryption
+      - 60-day default message retention
+      - Quantum-resistant message storage
+      - Decentralized node infrastructure
+      - No single point of failure
+      - USDC payments to node operators
+      - Fee estimation via Funding Portal
+
+  - name: Node Operator
+    description: >-
+      Organizations and individuals can apply to run XMTP network nodes and
+      earn fees from message traffic. Initially limited to 7 approved operators
+      selected for geographic, geopolitical, and industry diversity. Node
+      operators receive 100% of collected fees in Phase 1 of the network rollout.
+    url: https://xmtp.org/decentralization
+    free: false
+    pricing:
+      - type: RevenueShare
+        description: >-
+          Node operators earn 100% of message fees (shared between L3 appchain
+          sequencer and node operators) in Phase 1 of mainnet
+    features:
+      - Earn USDC fees from network message traffic
+      - Run xmtpd 1.0.0+ node software
+      - Full message copy maintained for censorship resistance
+      - Geographic and geopolitical diversity requirements
+      - Security Council governance oversight
+      - Prometheus monitoring integration
+      - Bare metal or cloud deployment options
