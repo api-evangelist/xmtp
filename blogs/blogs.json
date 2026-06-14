@@ -1,0 +1,76 @@
+{
+  "url": "https://blog.xmtp.org",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "XMTP: The Secure Communication Standard for the Agentic Era",
+      "url": "https://blog.xmtp.org/xmtp-the-secure-communication-standard-for-the-agentic-era/",
+      "date": "2026-04-01"
+    },
+    {
+      "title": "Language Is The API And We Need To Let Agents Talk",
+      "url": "https://blog.xmtp.org/language-is-the-api-and-we-need-to-let-agents-talk/",
+      "date": "2026-03-26"
+    },
+    {
+      "title": "You Could Make One For Your Mom, Though",
+      "url": "https://blog.xmtp.org/you-could-make-one-for-your-mom-though/",
+      "date": "2026-02-28"
+    },
+    {
+      "title": "Decentralization Update: XMTP Testnet Migration Complete",
+      "url": "https://blog.xmtp.org/decentralization-update-xmtp-testnet-migration-complete/",
+      "date": "2026-02-25"
+    },
+    {
+      "title": "Building Secure Agents with OpenClaw + XMTP",
+      "url": "https://blog.xmtp.org/building-secure-agents-with-openclaw-xmtp/",
+      "date": "2026-02-13"
+    },
+    {
+      "title": "Unlocking Quantum-Resistant Group Chats for ATProto on XMTP",
+      "url": "https://blog.xmtp.org/unlocking-quantum-encrypted-group-chats-for-atproto-on-xmtp/",
+      "date": "2026-02-10"
+    },
+    {
+      "title": "Our New HQ is a Global Network of Offices",
+      "url": "https://blog.xmtp.org/our-new-hq-is-a-global-network-of-offices/",
+      "date": "2026-02-02"
+    },
+    {
+      "title": "Building a Quantum-Resistant Messaging App In a Weekend",
+      "url": "https://blog.xmtp.org/building-a-quantum-resistant-messaging-app-in-a-weekend/",
+      "date": "2026-01-31"
+    },
+    {
+      "title": "XMTP's Decentralization Update (Jan 2026)",
+      "url": "https://blog.xmtp.org/xmtps-decentralization-update-jan-2026/",
+      "date": "2026-01-29"
+    },
+    {
+      "title": "The One Thing We Keep Avoiding About The Privacy & Encryption Debate",
+      "url": "https://blog.xmtp.org/the-one-thing-we-keep-avoiding-about-the-privacy-encryption-debate/",
+      "date": "2026-01-27"
+    },
+    {
+      "title": "Introducing flexible node selection for XMTP's decentralized network",
+      "url": "https://blog.xmtp.org/flexible-node-selection/",
+      "date": "2026-01-22"
+    },
+    {
+      "title": "Making XMTP docs available where developers work",
+      "url": "https://blog.xmtp.org/xmtp-docs-mcp-server/",
+      "date": "2026-01-13"
+    },
+    {
+      "title": "Base App Is Live: Create, Earn, and Trade — All in Chat, Secured by XMTP",
+      "url": "https://blog.xmtp.org/base-app-xmtp/",
+      "date": "2025-12-17"
+    },
+    {
+      "title": "Hello, World: Proof of Human Comes to Messaging",
+      "url": "https://blog.xmtp.org/hello-world-proof-of-human-comes-to-messaging/",
+      "date": "2025-12-11"
+    }
+  ]
+}

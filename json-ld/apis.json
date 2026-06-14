@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "XMTP APIs and SDKs",
+  "description": "APIs, SDKs, and developer tools provided by XMTP for decentralized encrypted messaging.",
+  "url": "https://xmtp.org",
+  "itemListElement": [
+    {
+      "@type": "SoftwareApplication",
+      "position": 1,
+      "name": "XMTP Network gRPC API",
+      "description": "Core gRPC-based API for the XMTP decentralized messaging network. Provides operations for sending and retrieving encrypted group messages, managing MLS key packages, publishing identity updates, and streaming real-time message events. All messages are end-to-end encrypted using the MLS protocol standard.",
+      "url": "https://docs.xmtp.org",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://xmtp.org/xmtp/plans.yml"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "value": "gRPC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "baseURL",
+          "value": "grpc://grpc.xmtp.network"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ProtocolBuffers",
+          "value": "https://github.com/xmtp/proto"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 2,
+      "name": "XMTP JavaScript/TypeScript SDK",
+      "description": "Client SDK for browsers and Node.js enabling applications to send and receive end-to-end encrypted messages via the XMTP network. Supports wallet-based authentication, group conversations, message streaming, consent management, and rich content types.",
+      "url": "https://github.com/xmtp/xmtp-js",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Browser, Node.js",
+      "programmingLanguage": ["JavaScript", "TypeScript"],
+      "codeRepository": "https://github.com/xmtp/xmtp-js"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 3,
+      "name": "XMTP Agent SDK",
+      "description": "Node.js SDK tailored for building AI agents and bots on the XMTP network. Enables agents to participate in XMTP conversations, respond to messages, and interact with users through encrypted decentralized messaging channels.",
+      "url": "https://docs.xmtp.org",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Node.js",
+      "programmingLanguage": ["JavaScript", "TypeScript"],
+      "codeRepository": "https://github.com/xmtp/agent-sdk-starter"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 4,
+      "name": "XMTP Android SDK",
+      "description": "Native Kotlin SDK for integrating XMTP encrypted messaging into Android applications. Supports wallet-based identity, group conversations, message streaming, and the full XMTP content type system for rich media and transactional messages in mobile apps.",
+      "url": "https://github.com/xmtp/xmtp-android",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Android",
+      "programmingLanguage": "Kotlin",
+      "codeRepository": "https://github.com/xmtp/xmtp-android"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 5,
+      "name": "XMTP iOS SDK",
+      "description": "Native Swift SDK for integrating XMTP encrypted messaging into iOS applications. Provides wallet-based authentication, group conversations, real-time message streaming, and comprehensive content type support.",
+      "url": "https://github.com/xmtp/xmtp-ios",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "iOS, macOS",
+      "programmingLanguage": "Swift",
+      "codeRepository": "https://github.com/xmtp/xmtp-ios"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 6,
+      "name": "XMTP React Native SDK",
+      "description": "Cross-platform SDK for building XMTP encrypted messaging into React Native and Expo applications. Bridges the libxmtp core library to JavaScript, enabling wallet-based messaging, group chats, streaming, and rich content types in cross-platform mobile applications.",
+      "url": "https://github.com/xmtp/xmtp-react-native",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "iOS, Android",
+      "programmingLanguage": ["JavaScript", "TypeScript"],
+      "codeRepository": "https://github.com/xmtp/xmtp-react-native"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "position": 7,
+      "name": "XMTP App Chain RPC API",
+      "description": "JSON-RPC API for the XMTP Layer-3 appchain built on Arbitrum and settling to Base. Used for smart contract interactions including group management, identity updates, node registration, and fee payments in USDC. Compatible with standard Ethereum JSON-RPC tooling.",
+      "url": "https://www.alchemy.com/docs/reference/xmtp-api-quickstart",
+      "applicationCategory": "DeveloperApplication",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "value": "JSON-RPC"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "baseURL",
+          "value": "https://xmtp-mainnet.g.alchemy.com/v2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ChainID",
+          "value": "2020"
+        }
+      ]
+    }
+  ]
+}

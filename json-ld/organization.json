@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "XMTP",
+  "description": "XMTP (Extensible Message Transport Protocol) is a decentralized, open messaging protocol that enables end-to-end encrypted communication between Ethereum wallet addresses and other decentralized identifiers. Built on MLS (Messaging Layer Security), XMTP provides developer SDKs and a gRPC-based network API for sending encrypted messages in decentralized applications, AI agents, and Web3 wallets without relying on centralized servers.",
+  "url": "https://xmtp.org",
+  "logo": "https://xmtp.org/img/xmtp-icon.png",
+  "sameAs": [
+    "https://github.com/xmtp",
+    "https://blog.xmtp.org",
+    "https://community.xmtp.org"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@xmtp.org",
+    "url": "https://community.xmtp.org"
+  }
+}
