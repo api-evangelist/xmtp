@@ -259,6 +259,8 @@ apis:
         url: https://community.xmtp.org
 
 common:
+  - type: DomainSecurity
+    url: security/xmtp-domain-security.yml
   - type: GitHub
     url: https://github.com/xmtp
   - type: Blog
