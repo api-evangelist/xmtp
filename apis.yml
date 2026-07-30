@@ -6,6 +6,18 @@ description: >-
   (Messaging Layer Security), XMTP provides developer SDKs and a gRPC-based
   network API for sending encrypted messages in decentralized applications,
   AI agents, and Web3 wallets without relying on centralized servers.
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://xmtp.org/img/xmtp-icon.png
 tags:
   - Web3
