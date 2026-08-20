@@ -123,6 +123,12 @@ apis:
     baseURL: https://xmtp.network
     tags:
       - Agents
+      - Artificial Intelligence
+      - Node.js
+      - SDK
+      - Automation
+    tags_raw:
+      - Agents
       - AI
       - Node.js
       - SDK
