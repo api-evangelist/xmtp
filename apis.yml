@@ -6,6 +6,18 @@ description: >-
   (Messaging Layer Security), XMTP provides developer SDKs and a gRPC-based
   network API for sending encrypted messages in decentralized applications,
   AI agents, and Web3 wallets without relying on centralized servers.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
@@ -277,6 +289,14 @@ apis:
         url: https://community.xmtp.org
 
 common:
+  - type: IssueTracker
+    url: https://github.com/xmtp/xmtp-js/issues
+  - type: Releases
+    url: https://github.com/xmtp/xmtp-js/releases
+  - type: CodeOfConduct
+    url: https://github.com/xmtp/xmtp-js/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/xmtp/xmtp-js/blob/main/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/xmtp-domain-security.yml
   - type: GitHub
