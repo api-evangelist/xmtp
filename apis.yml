@@ -289,6 +289,8 @@ apis:
         url: https://community.xmtp.org
 
 common:
+  - type: Website
+    url: https://www.xmtp.org/
   - type: IssueTracker
     url: https://github.com/xmtp/xmtp-js/issues
   - type: Releases
