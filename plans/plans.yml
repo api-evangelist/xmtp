@@ -84,3 +84,28 @@ plans:
       - Security Council governance oversight
       - Prometheus monitoring integration
       - Bare metal or cloud deployment options
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Open Developer Access
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Mainnet Usage (Pay-per-message)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Node Operator
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
